@@ -7,11 +7,11 @@ import React from "react";
 import logo from "../img/LB2.png";
 
 export const Navbar = () => {
-  const navigation = ["Service", "Product", "Location", "About"];
+  const navigation = ["Service", "Product", "Location", "About", "LYNX PROTECT"];
 
   return (
     <div className=" m-0 w-full bg-white p-2">
-      <nav className="m-0 relative flex items-center justify-between lg:justify-between xl:px-1">
+      <nav className="m-0 sticky flex items-center justify-between lg:justify-between xl:px-1">
         {/* Logo  */}
         <Link href="/">
           <span className="m-0 flex items-center text-2xl font-medium text-black dark:text-gray-100">

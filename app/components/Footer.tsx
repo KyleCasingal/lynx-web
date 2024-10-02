@@ -4,10 +4,10 @@ import React from "react";
 import logo from "../img/LB2.png";
 
 export function Footer() {
-  const navigation = ["Service", "Product", "Location", "About"];
+  const navigation = ["Service", "Product", "Location", "About", "LYNX PROTECT"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white p-5">
       <div>
         <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
           <div className="lg:col-span-2">
@@ -22,9 +22,9 @@ export function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-black">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
+              We make the TNVS application process simple and stress-free. From
+              paperwork to compliance, our experts handle everything, so you can
+              get on the road faster.
             </div>
           </div>
 
@@ -58,7 +58,7 @@ export function Footer() {
             <div className="text-black">Follow us</div>
             <div className="flex mt-5 space-x-5 text-black dark:text-black">
               <a
-                href="https://facebook.com/web3templates"
+                href="https://www.facebook.com/profile.php?id=61561137403473"
                 target="_blank"
                 rel="noopener"
               >

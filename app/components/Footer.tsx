@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "../img/LB2.png";
 
-export function Footer() {
+export default function Footer() {
   const navigation = ["Service", "Product", "Location", "About", "LYNX PROTECT"];
   const legal = ["Terms", "Privacy", "Legal"];
   return (

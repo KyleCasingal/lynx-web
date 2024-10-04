@@ -5,7 +5,7 @@ import { Disclosure } from "@headlessui/react";
 import logo from "../img/LB2.png"
 import React from "react";
 
-export const Navbar = () => {
+export default function Navbar() {
   const navigation = ["Service", "Products", "Location", "About Us", "LYNX PROTECT"];
 
   return (

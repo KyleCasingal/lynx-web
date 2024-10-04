@@ -8,7 +8,7 @@ export default function Landing() {
               Sakay na!
             </h2>
             <p className="mt-6 text-lg leading-8 text-black">
-              Navigating the TNVS requirements can be overwhelming, but we're
+              Navigating the TNVS requirements can be overwhelming, but we are
               here to make it easy for you. Let us handle the paperwork while
               you focus on driving. Start your TNVS application today!
             </p>

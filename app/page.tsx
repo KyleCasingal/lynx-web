@@ -1,6 +1,5 @@
-import Image from "next/image";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
+
+
 import Landing from "./components/Landing";
 
 export default function Home() {

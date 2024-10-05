@@ -6,7 +6,14 @@ import logo from "../img/LB2.png"
 import React from "react";
 
 export default function Navbar() {
-  const navigation = ["Service", "Products", "Location", "About Us", "LYNX PROTECT"];
+  
+const navigation = [
+  { href: "/services", key: "services", label: "Services" },
+  { href: "/products", key: "products", label: "Product" },
+  { href: "/location", key: "location", label: "Location" },
+  { href: "/about", key: "about", label: "About Us" },
+  { href: "/lynxprotect", key: "lynxprotect", label: "LYNX PROTECT" },
+];
 
   return (
     <div className="w-full sticky top-0 shadow-md shadow-gray-200 backdrop-blur-sm z-50">
@@ -25,7 +32,7 @@ export default function Navbar() {
           <div className="hidden mr-3 lg:flex nav__item">
             <Link
               href="/"
-              className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
+              className="px-6 py-2 text-white bg-gray-800 rounded-md md:ml-5"
             >
               Get Started
             </Link>
@@ -62,13 +69,13 @@ export default function Navbar() {
 
               <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                 <>
-                  {navigation.map((item, index) => (
+                  {navigation.map((link) => (
                     <Link
-                      key={index}
-                      href="/"
+                      key={link.key}
+                      href={link.href}
                       className="w-full px-4 py-2 -ml-4 text-black rounded-md dark:text-black hover:text-indigo-500 focus:text-indigo-500 focus:outline-none"
                     >
-                      {item}
+                      {link.label}
                     </Link>
                   ))}
                   <Link
@@ -86,13 +93,13 @@ export default function Navbar() {
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
+            {navigation.map((link) => (
+              <li className="mr-3 nav__item" key={link.key}>
                 <Link
-                  href="/"
+                  href={link.href}
                   className="inline-block px-4 py-2 text-lg font-normal text-black no-underline rounded-md dark:text-black hover:text-indigo-500 focus:text-indigo-500"
                 >
-                  {menu}
+                  {link.label}
                 </Link>
               </li>
             ))}

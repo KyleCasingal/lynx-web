@@ -1,4 +1,4 @@
-import Landing from "./components/landing";
+import Landing from "./landing/page";
 export default function Home() {
   return (
     <main className="bg-white">

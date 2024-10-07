@@ -9,14 +9,13 @@ export default function Navbar() {
   
 const navigation = [
   { href: "/services", key: "services", label: "Services" },
-  { href: "/products", key: "products", label: "Product" },
   { href: "/location", key: "location", label: "Location" },
   { href: "/about", key: "about", label: "About Us" },
   { href: "/lynxprotect", key: "lynxprotect", label: "LYNX PROTECT" },
 ];
 
   return (
-    <div className="w-full sticky top-0 shadow-md shadow-gray-200 backdrop-blur-sm z-50">
+    <div className="w-full sticky top-0  bg-white backdrop-blur-sm z-50">
       <nav className="bg-gray container relative flex flex-wrap items-center justify-between p-3 mx-auto lg:justify-between xl:px-1">
         {/* Logo  */}
         <Link href="/">

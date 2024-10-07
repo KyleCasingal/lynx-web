@@ -1,43 +1,71 @@
-import React from "react";
+import {
+  FolderIcon,
+  ArrowPathRoundedSquareIcon,
+  FingerPrintIcon,
+  ShieldCheckIcon,
+} from "@heroicons/react/24/outline";
 
-export default function services() {
+const features = [
+  {
+    name: "TNVS application",
+    description:
+      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+    icon: FolderIcon,
+  },
+  {
+    name: "Renewals",
+    description:
+      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+    icon: ArrowPathRoundedSquareIcon,
+  },
+  {
+    name: "Simple queues",
+    description:
+      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Insurance",
+    description:
+      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+    icon: ShieldCheckIcon,
+  },
+];
+
+export default function Example() {
   return (
-    <main className="bg-white">
-      <div className=" m-0 bg-white grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col row-start-2 items-start sm:items-start">
-          <div className="bg-white flex content-start">
-            <div className="flex content-start max-w-7xl sm:px-6 lg:px-8 ">
-              <div className="relative isolate overflow-hidden px-6 pt-0 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-0 lg:flex lg:gap-x-0 lg:px-24 lg:pt-0">
-                <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                  <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
-                    SERVICES
-                  </h2>
-                  <p className="mt-6 text-lg leading-8 text-black">
-                    Navigating the TNVS requirements can be overwhelming, but we
-                    are here to make it easy for you. Let us handle the
-                    paperwork while you focus on driving. Start your TNVS
-                    application today!
-                  </p>
-                  <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                    <a
-                      href="#"
-                      className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                    >
-                      View services
-                    </a>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-black"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Everything you need to start your TNVS journey
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Get support for your TNVS application, from
+            documentation to approval, ensuring a smooth and hassle-free start.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            {features.map((feature) => (
+              <div key={feature.name} className="relative pl-16">
+                <dt className="text-base font-semibold leading-7 text-gray-900">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                    <feature.icon
+                      aria-hidden="true"
+                      className="h-6 w-6 text-white"
+                    />
                   </div>
-                </div>
+                  {feature.name}
+                </dt>
+                <dd className="mt-2 text-base leading-7 text-gray-600">
+                  {feature.description}
+                </dd>
               </div>
-            </div>
-          </div>
-        </main>
+            ))}
+          </dl>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }

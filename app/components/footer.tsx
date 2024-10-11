@@ -4,7 +4,14 @@ import React from "react";
 import logo from "../img/LB2.png";
 
 export default function Footer() {
-  const navigation = ["Service", "Product", "Location", "About", "LYNX PROTECT"];
+  const navigation = [
+    { href: "/services", key: "services", label: "Services" },
+    { href: "/location", key: "location", label: "Location" },
+    { href: "/about", key: "about", label: "About Us" },
+    { href: "/lynxprotect", key: "lynxprotect", label: "LYNX PROTECT" },
+  ];
+
+
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className=" bottom-0 bg-white p-5">
@@ -30,13 +37,13 @@ export default function Footer() {
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
+              {navigation.map((link) => (
                 <Link
-                  key={index}
-                  href="/"
+                  key={link.key}
+                  href={link.href}
                   className="w-full px-4 py-2 text-black rounded-md dark:text-black hover:text-indigo-500 focus:text-indigo-500 "
                 >
-                  {item}
+                  {link.label}
                 </Link>
               ))}
             </div>
@@ -56,15 +63,25 @@ export default function Footer() {
           </div>
           <div className="">
             <div className="text-black">Follow us</div>
-            <div className="flex mt-5 space-x-5 text-black dark:text-black">
+            <div className="flex flex-row  mt-5 space-x-5 text-black dark:text-black">
               <a
                 href="https://www.facebook.com/profile.php?id=61561137403473"
                 target="_blank"
                 rel="noopener"
               >
-                <span className="sr-only">Facebook</span>
                 <Facebook />
               </a>
+              <span className="">Lynx Bridge Solutions</span>
+            </div>
+            <div className="flex flex-row  mt-5 space-x-5 text-black dark:text-black">
+              <a
+                href="https://www.facebook.com/profile.php?id=61566535352829"
+                target="_blank"
+                rel="noopener"
+              >
+                <Facebook />
+              </a>
+              <span className="">LYNX PROTECT</span>
             </div>
           </div>
         </div>

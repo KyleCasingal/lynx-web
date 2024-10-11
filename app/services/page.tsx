@@ -1,7 +1,7 @@
 import {
   FolderIcon,
   ArrowPathRoundedSquareIcon,
-  FingerPrintIcon,
+  BuildingOfficeIcon,
   ShieldCheckIcon,
 } from "@heroicons/react/24/outline";
 
@@ -9,30 +9,30 @@ const features = [
   {
     name: "TNVS application",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      "We assist drivers with TNVS applications by helping with registration, document submission, and regulatory compliance.",
     icon: FolderIcon,
   },
   {
     name: "Renewals",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      "We help drivers with PA (Provisional Authority) renewals by guiding them through the process and ensuring timely document submission for approval.",
     icon: ArrowPathRoundedSquareIcon,
   },
   {
-    name: "Simple queues",
+    name: "Office transactions",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: FingerPrintIcon,
+      "We encourage you to transact at our office for personalized assistance and immediate support.",
+    icon: BuildingOfficeIcon,
   },
   {
     name: "Insurance",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      "We help drivers with car insurance by selecting the right coverage and simplifying the application process.",
     icon: ShieldCheckIcon,
   },
 ];
 
-export default function Example() {
+export default function services() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

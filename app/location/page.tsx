@@ -10,7 +10,7 @@ export default function location() {
             width="800"
             height="600"
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>

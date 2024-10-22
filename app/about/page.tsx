@@ -52,9 +52,7 @@ export default function about() {
             Work with us
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Work with us and be part of a team that values creativity, innovation, and growth. At our company, you'll have the opportunity to collaborate, learn, and make a meaningful impact. We're committed to helping you shape your future with exciting opportunities in a supportive environment. Together, we can build success and explore your full potential.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

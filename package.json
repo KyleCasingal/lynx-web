@@ -12,6 +12,7 @@
     "@headlessui/react": "^2.1.9",
     "@heroicons/react": "^2.1.5",
     "components": "^0.1.0",
+    "firebase": "^11.0.1",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18"

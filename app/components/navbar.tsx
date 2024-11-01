@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
-import logo from "../img/LB2.png"
+import logofull from "../img/LB2.png"
 import React from "react";
 
 export default function Navbar() {
@@ -21,7 +21,7 @@ const navigation = [
         <Link href="/">
           <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
             <span>
-              <Image src={logo} alt="N" className="h-16 w-auto" />
+              <Image src={logofull} alt="N" className="h-16 w-auto" />
             </span>
           </span>
         </Link>
@@ -30,10 +30,16 @@ const navigation = [
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
           <div className="hidden mr-3 lg:flex nav__item">
             <Link
-              href="/"
+              href="/register"
               className="px-6 py-2 text-white bg-gray-800 rounded-md md:ml-5"
             >
               Get Started
+            </Link>
+            <Link
+              href="/login"
+              className="px-6 py-2 text-white bg-gray-800 rounded-md md:ml-5"
+            >
+              Log In
             </Link>
           </div>
         </div>

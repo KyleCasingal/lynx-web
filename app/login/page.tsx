@@ -55,7 +55,7 @@ export default function login() {
                     href="#"
                     className="font-semibold text-black hover:text-indigo-500"
                   >
-                    Forgot password?
+                    Forgot password
                   </a>
                 </div>
               </div>

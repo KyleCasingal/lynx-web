@@ -25,10 +25,6 @@ export default function Register() {
     }
   };
 
-  if (typeof window !== "undefined") {
-    window.alert("window.alert from client component");
-  }
-
 
 
   return (

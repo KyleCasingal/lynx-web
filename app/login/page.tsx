@@ -4,14 +4,7 @@ import logo from "../img/LB1.png";
 export default function login() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
+     
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                   <Image src={logo} alt="N" className="mx-auto h-16 w-auto" />
@@ -84,7 +77,7 @@ export default function login() {
           <p className="mt-10 text-center text-sm/6 text-gray-500">
             Not a member?{" "}
             <a
-              href="#"
+              href="/register"
               className="font-semibold text-black hover:text-indigo-500"
             >
               Register now

@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "../img/LB1.png";
 import { auth } from "../firebase"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { error } from 'node:console';
 
 export default function Register() {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ export default function Register() {
       console.log(user);
       console.log("user registered successfully!");
     } catch (error) {
-      console.log(error.message);
+      
     }
   };
 

@@ -32,7 +32,7 @@ export default function Register() {
           <Image src={logo} alt="N" className="mx-auto h-16 w-auto" />
 
           <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
-            Register your account
+            Register your account!
           </h2>
         </div>
 

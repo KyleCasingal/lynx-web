@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function location() {
+export default function Location() {
   return (
     <main className="bg-white">
       <div className=" m-0 bg-white grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">

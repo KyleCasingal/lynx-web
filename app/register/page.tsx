@@ -6,7 +6,7 @@ import logo from "../img/LB1.png";
 import { auth } from "../firebase"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
-export default function register() {
+export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fname, setFname] = useState("");

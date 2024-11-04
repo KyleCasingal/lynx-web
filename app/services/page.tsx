@@ -33,7 +33,7 @@ const features = [
   },
 ];
 
-export default function services() {
+export default function Services() {
   return (
     <main className="flex flex-col row-start-2 p-20 items-center sm:items-center">
       <div className="overflow-hidden bg-white py-10 sm:py-10">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "../img/LB1.png";
 
-export default function login() {
+export default function Login() {
   return (
     <>
      

@@ -12,7 +12,7 @@ export default function Register() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
 
-  const handleRegister = async (e: React.ChangeEvent<any>) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);

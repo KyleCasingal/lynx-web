@@ -7,7 +7,7 @@ import { auth } from "../firebase"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { error } from 'node:console';
 
-export default function Register() {
+export default function Register() { 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fname, setFname] = useState("");
@@ -24,6 +24,11 @@ export default function Register() {
       
     }
   };
+
+  if (typeof window !== "undefined") {
+    window.alert("window.alert from client component");
+  }
+
 
 
   return (

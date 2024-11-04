@@ -6,13 +6,13 @@ import logo from "../img/LB1.png";
 import { auth } from "../firebase"
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
-export default function register() {
+export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
 
-  const handleRegister = async (e) => {
+  const handleRegister = async (e: React.ChangeEvent<any>) => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, Suspense } from 'react'
 import Image from "next/image";
 import logo from "../img/LB1.png";
 import { auth } from "../firebase"
@@ -27,7 +27,8 @@ export default function Register() {
 
   return (
     <div>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <Suspense>
+        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image src={logo} alt="N" className="mx-auto h-16 w-auto" />
 
@@ -163,6 +164,8 @@ export default function Register() {
           </p>
         </div>
       </div>
+      </Suspense>
+      
     </div>
   );
 }

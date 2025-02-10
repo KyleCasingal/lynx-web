@@ -16,7 +16,7 @@ const navigation = [
 ];
 
 
-export default function page() {
+export default function Lynxpro() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 

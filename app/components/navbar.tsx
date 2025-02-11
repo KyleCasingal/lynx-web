@@ -84,13 +84,13 @@ const navigation = [
                     </Link>
                   ))}
                   <Link
-                    href="/"
+                    href="/register"
                     className="w-full px-6 py-2 mt-3 text-center text-white bg-gray-800 rounded-md lg:ml-5"
                   >
                     Get Started
                   </Link>
                   <Link
-                    href="/"
+                    href="/login"
                     className="w-full px-6 py-2 mt-3 text-center text-white bg-gray-800 rounded-md lg:ml-5"
                   >
                     Log In

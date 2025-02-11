@@ -8,14 +8,6 @@ import Image from "next/image";
 import LPlogo from "../img/LP.png";
 
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
-
-
 export default function Lynxpro() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -49,7 +41,7 @@ export default function Lynxpro() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="lynxpro/quotation"
                 className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get a quote

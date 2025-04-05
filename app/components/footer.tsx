@@ -8,7 +8,7 @@ export default function Footer() {
     { href: "/services", key: "services", label: "Services" },
     { href: "/location", key: "location", label: "Location" },
     { href: "/about", key: "about", label: "About Us" },
-    { href: "/lynxprotect", key: "lynxprotect", label: "LYNX PROTECT" },
+    { href: "/lynxpro", key: "lynxprotect", label: "LYNX PROTECT" },
   ];
 
 
